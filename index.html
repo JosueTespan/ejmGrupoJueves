@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            border: 2; /* Elimina el borde */
+            width: 500px; /* Ancho total del fieldset */
+            margin: 2; /* Reduce el margen */
+            padding: 2; /* Reduce el relleno */
+        }
+        
+        legend {
+          font-size: 16px; /* Reduce el tamaño del texto de la leyenda */
+        }
+        #texto {
+        width: 300px; /* Ancho en píxeles */
+        height: 100px; /* Altura en píxeles */
+        }
+        </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Informacion Personal</legend>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+        </form>
+        <form>
+            <label for="opciones">Lenguaje de programacion preferido:</label><br>
+            <select id="opciones" name="opciones">
+            <option value="Seleccionar">--Seleccionar--</option>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+            </select><br>
+          </form>
+          <form>
+              <legend>Conocimiento en:</legend>
+              <label><input type="checkbox" name="opcion1"> C++</label>
+              <label><input type="checkbox" name="opcion2"> JavaScript</label>
+              <label><input type="checkbox" name="opcion3"> SQL</label>
+          </form>
+          <form>
+            <label for="fecha">Digite una fecha entre Enero 1997 y Diciembre de 2000:</label><br>
+            <input type="date" id="fecha" name="fecha"><br>
+          </form>
+          <form>
+            <label for="nombre">Digite del 1 al 10, con cuanto se califica su conocimiento en programacion:</label><br>
+            <input type="text" id="nombre" name="nombre" size="5"><br>
+          </form>
+        </fieldset>  
+        <fieldset>
+        <legend>Califica el Sitio</legend>
+        <div>
+            <legend>Calificacion:</legend>
+            <input type="radio" name="number" value="number">5
+            <input type="radio" name="number" value="number">4
+            <input type="radio" name="number" value="number">3
+            <input type="radio" name="number" value="number">2
+            <input type="radio" name="number" value="number">1
+        </div>
+        <form>
+            <label for="nombre">Deje su comentario:</label><br>
+            <input type="text" id="texto" name="texto"><br>
+          </form>
+        </fieldset>
+        <div>
+            <input type="button" value="Enviar" onclick="alert('Los datos se enviaron con exito')">
+        </div>
+    
+</body>
+</html>
